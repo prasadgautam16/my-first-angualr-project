@@ -1,0 +1,20 @@
+
+<label for="serverName">Server Name</label>
+<input id="#serverName" [(ngModel)]="serverName"> 
+<br>
+<!-- <input id="#serverName" (input)="onUpdateServerName($event)">  -->
+
+<button class="btn btn-info" (click)="onCreateServer()" [disabled]="!addServerFlag">Add Server</button>
+
+<hr>
+
+<p *ngFor="let server of serversCreated"  [ngStyle]="{backgroundColor : getBackGround(server.serverStatus)}">the {{ server.serverName }} {{ server.serverId }} is {{ server.serverStatus }}</p>
+
+
+
+<p *ngIf="isServerCreated">{{ serverCreatedText }}</p>
+
+<!-- <p *ngIf="isServerCreated; else noServerCreated">{{ serverCreatedText }}</p>
+<ng-template #noServerCreated>
+    <p>No Server Created!! Please click Add Server button to Create a Server.</p>
+</ng-template> -->

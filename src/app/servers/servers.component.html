@@ -1,0 +1,13 @@
+<div class="container" [ngClass]="{dark: makeBackgroundDark === true}">
+  <h2>SERVERS WORKS!</h2>
+  <div class="form-check form-switch">
+    <input (change)="changeSwitch($event)" class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+    <label class="form-check-label" for="flexSwitchCheckDefault">Make it Dark</label>
+  </div>
+  <hr>
+  <app-server></app-server>
+  <hr>
+  <app-show-my-text></app-show-my-text>
+  <hr>
+  <app-display-random-class></app-display-random-class>
+</div>

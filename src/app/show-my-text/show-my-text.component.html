@@ -1,0 +1,12 @@
+<h2>Show My Text</h2>
+<hr>
+<label for="#enterText">Enter Text Here :</label>
+&nbsp;
+<input type="text" class="form-control" [(ngModel)]="textInputField" id="enterText">
+<hr>
+INPUT TEXT IS PRINTED HERE : {{ textInputField }}
+<hr>
+<button class="btn btn-primary" [disabled]="!isInputFieldEmpty()" (click)="clearInputField()">Clear Input</button>
+<!--  uncomment below line and comment the above line -->
+<!-- <button class="btn" [disabled]="textInputField === ''" (click)="textInputField = ''">Clear Input</button> -->
+

@@ -1,0 +1,19 @@
+.tech {
+    color: aqua;
+    background-color: black;
+}
+
+.nonTech {
+    color: white;
+    background-color: brown;
+}
+
+.proTech {
+    color: palegoldenrod;
+    background-color: grey;
+}
+
+.hyperTech {
+    color: palegreen;
+    background-color: darkblue;
+}

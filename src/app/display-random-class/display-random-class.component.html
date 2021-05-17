@@ -1,0 +1,7 @@
+<h2>display-random-class works!</h2>
+
+<button (click)="onClassCreation()" class="btn btn-primary">CLick Me to Add</button>
+<br>
+<br>
+
+<p *ngFor="let e of randomClasses; let i = index" [ngClass]="{ 'tech' : true === true }">Hello I am {{ e }}.</p>
